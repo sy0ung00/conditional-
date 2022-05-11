@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문</title>
+</head>
+<body>
+    <script>
+        // if(조건식) {
+        //     스크립트코드
+        // }
+
+        let  num = 10;
+        if(num  < 100) {
+            document.write('hello')
+        }
+        
+        let userName = prompt('방문자의 이름은','이름입력해주세요');
+        if(userName) {
+            //입력창에 이름을 작성했을 때 스크립트 실행
+            //이름님 반갑습니다! 방문을 환영합니다.
+            document.write(userName +'님 반갑습니다!방문을 환영합니다.','<br>');
+        }
+
+    //    if(조건식) {
+    //        조건이 참일때 스크립트 코드
+    //    } else {
+    //        조건이 거짓일 때 스크립트 코드
+    //    }
+
+    //하루에 걷는 양 질문
+    //1000보를 기준으로 
+    //1000보와 같거나 적을 때 => 힘내달라
+    //1000보 이상일 때 => 훌륭하다
+    let walk = prompt('당신은 하루에 걷는 양은 몇보인가요?','');
+    if(walk <= 1000) {
+        document.write(userName +'님 힘내주세요!','<br>');
+        //이름님 힘내주세요!
+    } else {
+        //이름님 매우 훌륭해요!
+        document.write(userName +'님 훌륭해요!','<br>');
+    }
+
+    let gender = prompt('당신의 성별은?','') //남자 여자
+    let age = prompt('당신의 나이는?','')
+    if(gender == '남자') {
+        if(age >= 19) {
+            document.write('남자 성인입니다.');
+        } else {
+            document.write('남자 미성년자입니다.');
+        }
+    } else {
+            if(age >= 19) {
+                document.write('여자 성인입니다.')
+            } else {
+                document.write('여자 미성년자입니다.')
+            }
+        
+    }
+ </script>
+</body>
+</html>
